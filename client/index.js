@@ -65,42 +65,8 @@ updateBtn.addEventListener('click', function() {
         }
     })
 });
-/*updateBtn.onClick = function(){
-    const updateNameInput = document.querySelector('#update-name-input');
-
-    fetch('http://localhost:5219/update/',{
-        method : 'PATCH',
-        body: JSON.stringify({
-            id : updateNameInput.dataset.id,
-            name : updateNameInput.value
-        })
-    })
-
-    .then(response => response.json())
-    .then(data => {
-        if(data.success){
-            location.reload();
-        }
-    })
-}*/
 
 const addBtn = document.querySelector('#add-name-btn');
-
-/*addBtn.onClick = function (){
-    const nameInput = document.querySelector('#name-input');
-    const name = nameInput.value;
-    nameInput.value = "";
-
-    fetch('http://localhost:5219/insertNew', {
-        headers: {
-            'Content-type': 'application/json'
-        },
-        method: 'POST',
-        body: JSON.stringify({name: name})
-    })
-    .then(response => response.json())
-    .then(data => insertRowIntoTable(data['data']));
-}*/
 
 addBtn.addEventListener('click', function() {
     const nameInput = document.querySelector('#name-input');
