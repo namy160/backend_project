@@ -1,4 +1,4 @@
-Project using Node.js, Express ad MySQL
+Project using Node.js, Express and MySQL
 
 Template for a fullstack app.
 
